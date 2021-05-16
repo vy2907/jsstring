@@ -1,26 +1,19 @@
-// // Exercise 1:
-// const is_Blank = input => {
-//     console.log("arrowfunction")
-//     return((input.length === 0) ? true : false)}
+// Exercise 1:
+const is_Blank = input => {
+    console.log("arrowfunction")
+    return((input.length === 0) ? true : false)}
 
-// // function  is_Blank(input) {
-// //     // if (input.length === 0)
-// //     // return true;
-// //     // else 
-// //     // return false;
-// //     return (input.length === 0) ? true : false
-// //   }
+// function  is_Blank(input) {
+//     // if (input.length === 0)
+//     // return true;
+//     // else 
+//     // return false;
+//     return (input.length === 0) ? true : false
+//   }
 
-// console.log(is_Blank(""));
-// console.log(is_Blank("hello"));
+console.log(is_Blank(""));
+console.log(is_Blank("hello"));
 
 
-// Exercise 2:
-
-stringToArray  = str  => {
-    return str.split(" ");
-};
-
-console.log(stringToArray("Robin Singh"));
 
 
