@@ -1,13 +1,23 @@
-function titleCase (str) {
-    if ((str===null) || (str===''))
-         return false;
-    else
-     str = str.toString(); 
-    return str.replace(/\w\S*/g, 
-  function(txt){
-     return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
-  }
 
-  console.log(titleCase('JavaScript exercises. python exercises.'));
+// - If n is not given, get the first element.
+// - If n < 0, return the empty array.
+// - If n > number of elements in the array, return the entire array
+// 
 
+
+
+
+firstN =  function(array, n) {
+  if (n == null) 
+    return array[0];
+  if (n < 0)
+    return [];
+  return array.slice(0, n);
+};
+
+console.log(firstN([7, 9, 0, -2]));
+console.log(firstN([],3));
+console.log(firstN([7, 9, 0, -2],3));
+console.log(firstN([7, 9, 0, -2],6));
+console.log(firstN([7, 9, 0, -2],-3));
 
