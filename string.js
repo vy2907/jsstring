@@ -1,11 +1,13 @@
+function titleCase (str) {
+    if ((str===null) || (str===''))
+         return false;
+    else
+     str = str.toString(); 
+    return str.replace(/\w\S*/g, 
+  function(txt){
+     return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+  }
 
-abbreviateName = (str1) => {
-    var names = str1.split(" ");
-    if (names.length > 1) {
-        return (names[0] + " " + names[1].charAt(0));
-    }
-    return names[0];
-};
-console.log(abbreviateName("Robin Singh"));
+  console.log(titleCase('JavaScript exercises. python exercises.'));
 
 
