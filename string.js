@@ -1,23 +1,19 @@
 
-// - If n is not given, get the first element.
+// "- If n is not given, return the last element.
 // - If n < 0, return the empty array.
-// - If n > number of elements in the array, return the entire array
-// 
+// - If n >  number of elements in the array, return the entire array.
+// " 
 
 
 
-
-firstN =  function(array, n) {
-  if (n == null) 
-    return array[0];
-  if (n < 0)
-    return [];
-  return array.slice(0, n);
+lastN =  function(array, n) {
+    if (n < 0)
+        return [];
+    if (n == null) 
+    return array[array.length - 1];
+    return array.slice(Math.max(array.length - n, 0))  
 };
 
-console.log(firstN([7, 9, 0, -2]));
-console.log(firstN([],3));
-console.log(firstN([7, 9, 0, -2],3));
-console.log(firstN([7, 9, 0, -2],6));
-console.log(firstN([7, 9, 0, -2],-3));
-
+console.log(lastN([7, 9, 0, -2]));	
+console.log(lastN([7,9,0,-2],3));	
+console.log(lastN([7, 9, 0, -2],6));	
