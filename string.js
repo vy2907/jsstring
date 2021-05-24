@@ -1,18 +1,9 @@
-// Exercise 1:
-const is_Blank = input => {
-    console.log("arrowfunction")
-    return((input.length === 0) ? true : false)}
+function move(array,from,to) {
+	array.splice(to,0,array.splice(from,1)[0])
+	return array;
+}
 
-// function  is_Blank(input) {
-//     // if (input.length === 0)
-//     // return true;
-//     // else 
-//     // return false;
-//     return (input.length === 0) ? true : false
-//   }
-
-console.log(is_Blank(""));
-console.log(is_Blank("hello"));
+console.log(move([10, 20, 30, 40, 50], 2, 4));
 
 
 
